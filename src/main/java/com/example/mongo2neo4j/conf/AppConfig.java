@@ -22,6 +22,9 @@ public class AppConfig {
         return new MongoTemplate(mongoClient(), "database");
     }
 
+    /*
+     * Configuration for neo4j
+     */
     @Bean
     public org.neo4j.ogm.config.Configuration configuration() {
         org.neo4j.ogm.config.Configuration configuration = new org.neo4j.ogm.config.Configuration.Builder()
