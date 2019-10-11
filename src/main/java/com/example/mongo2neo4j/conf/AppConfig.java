@@ -12,15 +12,15 @@ public class AppConfig {
     /*
      * Use the standard Mongo driver API to create a com.mongodb.MongoClient instance.
      */
-    public @Bean
-    MongoClient mongoClient() {
-        return new MongoClient("localhost");
-    }
-
-    public @Bean
-    MongoTemplate mongoTemplate() {
-        return new MongoTemplate(mongoClient(), "database");
-    }
+//    public @Bean
+//    MongoClient mongoClient() {
+//        return new MongoClient("localhost");
+//    }
+//
+//    public @Bean
+//    MongoTemplate mongoTemplate() {
+//        return new MongoTemplate(mongoClient(), "database");
+//    }
 
     /*
      * Configuration for neo4j

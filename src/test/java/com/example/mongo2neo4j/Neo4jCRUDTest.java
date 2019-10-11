@@ -83,6 +83,7 @@ public class Neo4jCRUDTest {
 
   @Test
   public void testFindAndMergeNode() {
+    // 注意，如果不是先find再merge，而是直接new一个id已经存在的对象去save，那么最终效果是替换（旧的属性全部删除）而不是合并
     Neo4jVOAccidentNode node = accidentNodeRepository.findByBdkeId("xxx2019");
     node.setUrl("www.google.com");
     accidentNodeRepository.save(node);
